@@ -1,0 +1,454 @@
+
+
+#navbar-brand {
+    font-family: 'Glegoo', serif;
+    letter-spacing: 2px;
+}
+
+#navbarDropdown {
+    display: none;
+}
+
+#myDropdown {
+    background-color: rgba(255,255,255,.8);
+    width: 200px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.list {
+    padding: 10px;
+}
+
+.list:hover {
+    border-bottom: #54595a dotted 1pt;
+}
+
+#initial {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.display-4 {
+    font-size: 24pt;
+    font-weight: normal;
+    font-family: 'Glegoo', serif;
+    color: white;
+}
+
+.lead {
+    color: white;
+    font-size: 14pt;
+}
+
+.display-logo {
+    position: relative;
+    bottom: 78%;
+    text-align: center;
+    text-shadow: #54595a -5px 5px;
+}
+
+h1 {
+    font-size: 72pt;
+    font-weight: normal;
+    font-family: 'Glegoo', serif;
+    color: white;
+    text-shadow: #54595a -5px 5px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: normal;
+    font-family: 'Glegoo', serif;
+    color: #54595a;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #54595a;
+}
+
+p, div {
+    color: #54595a;
+
+}
+
+.grid {
+    position: relative;
+    top: 100px;
+    display: none;
+    grid-template-columns: [1] 25% [2] 25% [3] 25% [4] 25% [5];
+    grid-auto-rows: [1] auto [2] auto [3] auto [4] auto [5] auto [6] auto [7] auto [8] auto [9];
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 2;
+    justify-items: center;
+    align-items: start;
+}
+
+#itinerary-add-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-items: start;
+    z-index: 3;
+    background-color: white;
+    color: #54595a;
+    border: none;
+    padding: 15px 25px;
+    width: auto;
+    border-radius: 0;
+    font-weight: normal;
+    font-family: 'Glegoo', serif;
+    /* display: none; */
+}
+
+#itinerary-add-btn:hover {
+    background-color: #54595a;
+    color: white;
+}
+
+#main-img-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border: #54595a solid 2pt;
+    box-shadow: #54595a -10px 10px;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#search-results {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    padding: 50px;
+    border: #cd9d8d solid 2pt;
+    box-shadow: #cd9d8d -10px 10px;
+    background-color: white;
+}
+
+#home-weather-info{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 35px;
+    border: #dd9166 solid 2pt;
+    box-shadow: #dd9166 -10px 10px;
+    background-color: white;
+}
+
+#weatherDiv{
+    float: left;
+    padding: 15px;
+}
+
+#links {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding: 50px;
+    border: #9f8f80 solid 2pt;
+    box-shadow: #9f8f80 -10px 10px;
+    background-color: white;
+}
+
+a {
+    color: #9f8f80;
+    padding: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9f8f80;
+}
+
+#itinerary {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;  
+    grid-row-end: 8;
+    background-color: white;
+    border: solid #2c656d 2pt;
+    box-shadow: #2c656d -10px 10px;
+    width: 100%;
+}
+
+#itinerary-title {
+    text-align: center;
+    padding: 25px;
+}
+
+#itinerary-data-head {
+    background-color: #2c656d;
+    opacity: .8;
+    padding: 10px;
+    color: white;
+}
+
+.edit-icon {
+    color: white;
+}
+
+.park-name {
+    color: white;
+}
+
+.start-date {
+    color: white;
+}
+
+.end-date {
+    color: white;
+}
+
+.days {
+    color: white;
+}
+
+.trash {
+    color: white;
+}
+
+.itinerary-data-row {
+    height: 50px;
+    background-color: #f8f9fa;
+    color: #54595a;
+    font-weight: bold;
+    padding: 10px 0;
+    opacity: .75;
+    vertical-align: middle;
+}
+
+#trails {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    padding: 50px;
+    border: #5b653d solid 2pt;
+    box-shadow: #5b653d -10px 10px;
+    height: 400px;
+    overflow: scroll;
+    background-color: white;
+}
+
+#trail {
+    border-bottom: lightgray solid 1pt;
+}
+
+#trail-name {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#edit {
+    margin-top: -4px;
+    border-radius: 0;
+    border: none;
+    padding: 5px 15px;
+    border: solid #2c656d 2pt;
+    background-color: #2c656d;
+    color: white;
+}
+.itinerary-data-row:hover {
+    opacity: 1;
+}
+.itinerary-remove {
+    margin-top: 5px;
+    color: #2c656d;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.itinerary-remove:hover {
+    opacity: 1.0;
+}
+
+@media only screen and (max-width: 991px) {
+
+    h1 {
+        font-size: 48pt;
+        text-shadow: #54595a -2.5px 2.5px;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    .grid {
+        grid-template-columns: [1] auto [2] auto [3];
+        grid-auto-rows: [1] auto [2] auto [3] auto [4] auto [5] auto [6] auto [7] auto [8] auto [9];
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        z-index: 2;
+        margin-left: 25px;
+    }
+    
+    #itinerary-add-btn {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: 25px;
+        padding: 15px 15px;
+        width: 40%;
+    }
+    
+    #main-img-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: #54595a -5px 5px;
+    }
+
+    #search-results {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        padding: 25px;
+        border: #cd9d8d solid 2pt;
+        box-shadow: #cd9d8d -5px 5px;
+        background-color: white;
+    }
+    
+    #home-weather-info{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding: 25px;
+        box-shadow: #dd9166 -5px 5px;
+    }
+    
+    #links {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        padding: 25px;
+        box-shadow: #9f8f80 -5px 5px;
+    }
+    
+    #itinerary {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;  
+        grid-row-end: 8;
+        box-shadow: #2c656d -5px 5px;
+    }
+
+    #itinerary-title {
+        padding: 25px;
+    }
+
+
+.edit-icon {
+    color: white;
+}
+
+.park-name {
+    color: white;
+}
+
+.start-date {
+    color: white;
+}
+
+.end-date {
+    color: white;
+}
+
+.days {
+    color: white;
+}
+
+    
+#trails {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    padding: 25px;
+    box-shadow: #5b653d -5px 5px;
+}
+
+.display-logo {
+    bottom: 87%;
+}
+
+
+}
+
+@media only screen and (max-width: 783px) {
+
+    .start-date {
+        color: white;
+        display: none;
+    }
+    
+    .end-date {
+        color: white;
+        display: none;
+    }
+
+    .start-display, .start-title {
+        display: none;
+    }
+    
+    .end-display, .end-title {
+        display: none;
+    }
+
+    #itinerary-data-head {
+        height: 50px;
+        padding: 10px;
+    }
+}
